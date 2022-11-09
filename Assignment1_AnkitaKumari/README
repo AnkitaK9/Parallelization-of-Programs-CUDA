@@ -1,0 +1,19 @@
+1)To run sequential.c:
+      gcc sequential.c
+      ./a.out
+      
+2)To run parallel.cu on Google collab:
+
+      !nvcc --version
+      !pip install git+https://github.com/andreinechaev/nvcc4jupyter.git
+      %load_ext nvcc_plugin  
+   Then run the code on collab with %%cu.      
+     
+3)To run parallel.cu on linux terminal:       
+   Firstly install: sudo apt install nvidia-cuda-toolkit
+    
+   Then run following command on terminal:
+       
+           nvcc parallel.cu
+           ./a.out
+
